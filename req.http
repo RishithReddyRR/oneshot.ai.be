@@ -1,0 +1,54 @@
+
+
+###
+POST http://localhost:3015/auth/login
+Content-Type: application/json
+
+{
+    "email":"rishithreddy432@gmail.com"
+}
+
+
+###
+
+POST http://localhost:3015/auth/verify-otp
+Content-Type: application/json
+
+{
+    "email":"rishithreddy432@gmail.com",
+    "otp":"239879"
+}
+
+
+###
+GET http://localhost:3015/booking/get-empty-slots?date=28-8-2023
+
+
+###
+POST http://localhost:3015/booking/book-slot
+Content-Type: application/json
+
+{
+    "date":"28-8-2023",
+    "slotIdx":3,
+    "email":"tvomann2121@gmail.com"
+}
+
+
+###
+POST http://localhost:3015/booking/cancel-booking
+Content-Type: application/json
+
+{
+    "date":"28-8-2023",
+    "slotIdx":3,
+    "email":"tvomann2121@gmail.com"
+}
+
+###
+POST http://localhost:3015/booking/my-bookings
+Content-Type: application/json
+
+{
+    "email":"rishithreddy432@gmail.com"
+}
